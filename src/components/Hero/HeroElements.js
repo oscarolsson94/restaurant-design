@@ -7,3 +7,23 @@ export const HeroContainer = styled.div`
     background-position: center;
     background-size: cover;
 `;
+
+export const HeroContent = styled.div`
+
+`;
+
+export const HeroItems = styled.div`
+    
+`;
+
+export const HeroH1 = styled.div`
+    
+`;
+
+export const HeroP = styled.div`
+    
+`;
+
+export const HeroBtn = styled.div`
+    
+`;
