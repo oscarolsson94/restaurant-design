@@ -1,10 +1,10 @@
 import React from 'react';
 import { ProductsContainer, ProductsWrapper, ProductsHeading, ProductTitle, ProductCard, ProductImg, ProductInfo, ProductDesc, ProductPrice, ProductButton } from './ProductsElements';
 
-const Products = () => {
+const Products = ({heading, data}) => {
     return (
         <ProductsContainer>
-            <ProductsHeading>heading</ProductsHeading>
+            <ProductsHeading>{heading}</ProductsHeading>
             <ProductsWrapper>
                 {data.map((product, index) => {
                     return (
@@ -17,7 +17,7 @@ const Products = () => {
                                 <ProductButton>{product.button}</ProductButton>
                             </ProductInfo>
                         </ProductCard>
-                    )
+                    );
                 })}
             </ProductsWrapper>
             
