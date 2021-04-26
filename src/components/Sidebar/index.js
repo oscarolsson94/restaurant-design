@@ -1,9 +1,9 @@
 import React from 'react';
 import { SidebarContainer, Icon, CloseIcon, SidebarMenu, SidebarLink, SidebarRoute, SideBtnWrap } from './SidebarElements';
 
-const Siebar = () => {
+const Sidebar = ({isOpen, toggle}) => {
     return (
-        <SidebarContainer>
+        <SidebarContainer isOpen={isOpen} onClick={toggle} >
             <Icon>
                 <CloseIcon />
             </Icon>
@@ -19,4 +19,4 @@ const Siebar = () => {
     );
 }
 
-export default Siebar;
+export default Sidebar;
